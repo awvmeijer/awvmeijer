@@ -90,6 +90,11 @@ flowchart LR
   ACT["Teams + Telegram agents · 17 commands<br/>10-panel mission control · 5-viewport geospatial hub"]
 
   LEDGER -.-> SCORE
+
+  style FUSE stroke:#7fd6a8,stroke-width:1.5px
+  style SCORE stroke:#7fd6a8,stroke-width:1.5px
+  style ACT stroke:#7fd6a8,stroke-width:1.5px
+  style LEDGER stroke:#7fd6a8,stroke-width:1.5px
 ```
 
 ### Toolbox
