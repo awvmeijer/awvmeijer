@@ -1,10 +1,15 @@
-<h1 align="center">Anthony Meijer</h1>
-<p align="center"><b>AI &amp; Systems Engineer</b> &nbsp;&middot;&nbsp; LLM Agents &nbsp;&middot;&nbsp; Real-time Systems &nbsp;&middot;&nbsp; Singapore</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.svg">
+    <img alt="Anthony Meijer, AI and Systems Engineer" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.svg" width="100%">
+  </picture>
+</p>
 
 <p align="center">
-  <a href="https://anthonymeijerdev.vercel.app">Portfolio</a> &nbsp;&middot;&nbsp;
-  <a href="https://www.linkedin.com/in/anthonymeijer">LinkedIn</a> &nbsp;&middot;&nbsp;
-  <a href="mailto:awvmeijer@gmail.com">Email</a>
+  <a href="https://anthonymeijerdev.vercel.app"><code>PORTFOLIO</code></a>
+  <a href="https://www.linkedin.com/in/anthonymeijer"><code>LINKEDIN</code></a>
+  <a href="mailto:awvmeijer@gmail.com"><code>EMAIL</code></a>
 </p>
 
 ---
@@ -19,13 +24,38 @@ Currently building atmospheric-intelligence systems at NTU's Earth Observatory o
 - **Real-time ML systems**: sensor fusion, detection models, event-sourced pipelines, reproducible deployments
 - **Full-stack delivery**: FastAPI and Python backends, Next.js / TypeScript frontends, PostgreSQL, containers and CI
 
+### How 3DREAMS@SG works
+
+Four data sources onto one clock, across three sites, on a ten-minute cycle. Every two-hour window runs two detection stages through a single scorer shared by the live pipeline, the replay engine, and the dashboard.
+
+```mermaid
+%%{init:{'theme':'base','themeVariables':{'background':'transparent','primaryColor':'transparent','secondaryColor':'transparent','tertiaryColor':'transparent','primaryBorderColor':'#8a8a85','secondaryBorderColor':'#8a8a85','primaryTextColor':'#8a8a85','secondaryTextColor':'#8a8a85','tertiaryTextColor':'#8a8a85','lineColor':'#8a8a85','fontSize':'13px'}}}%%
+flowchart LR
+  L["Doppler LiDAR<br/>backscatter + wind"] --> FUSE
+  AQ["NEA air quality"] --> FUSE
+  FIRE["Satellite fire detections"] --> FUSE
+  CLOUD["Cloud mask"] --> FUSE
+
+  FUSE["Fusion<br/>3 sites · one clock · 10 min"] --> LEDGER[("Episode ledger<br/>replayable")]
+  FUSE --> SCORE
+
+  SCORE["Shared scorer<br/>2-hour window"] --> P["6-component probability model<br/>+ diurnal boundary-layer breakthrough"]
+  SCORE --> C["3-stage cloud classifier"]
+
+  P --> ACT
+  C --> ACT
+  ACT["Teams + Telegram agents · 17 commands<br/>10-panel mission control · 5-viewport geospatial hub"]
+
+  LEDGER -.-> SCORE
+```
+
 ### Selected work
 
-| Project | What it is | Stack |
-| --- | --- | --- |
-| **3DREAMS@SG** | Real-time atmospheric-intelligence platform: fuses four data sources across three LiDAR sites, scores transport events, alerts over Teams / Telegram. [Live demo &rarr;](https://3dreams-demo.vercel.app/demo/v5/index.html) | Python &middot; PostgreSQL &middot; Next.js &middot; Three.js |
-| **Brains** | Self-hosted LLM agent platform with episodic memory, a live knowledge graph, and a scheduled agent fleet behind approval gates. | FastAPI &middot; RAG &middot; vector search &middot; d3 |
-| **Forge** | Market-intelligence research system built on Brain memory, with glass-box provenance on every claim. | FastAPI &middot; DuckDB &middot; LLM |
+| | Project | What it is | Stack |
+| --- | --- | --- | --- |
+| `01` | **3DREAMS@SG** | Real-time atmospheric-intelligence platform: fuses four data sources across three LiDAR sites, scores transport events, alerts over Teams / Telegram. [Live demo &rarr;](https://3dreams-demo.vercel.app/demo/v5/index.html) | Python &middot; PostgreSQL &middot; Next.js &middot; Three.js |
+| `02` | **Brains** | Self-hosted LLM agent platform with episodic memory, a live knowledge graph, and a scheduled agent fleet behind approval gates. | FastAPI &middot; RAG &middot; vector search &middot; d3 |
+| `03` | **Forge** | Market-intelligence research system built on Brain memory, with glass-box provenance on every claim. | FastAPI &middot; DuckDB &middot; LLM |
 
 > Several of these run as private production systems. Public, showcase-only versions and write-ups live in the pinned repositories and on my <a href="https://anthonymeijerdev.vercel.app">portfolio</a>.
 
