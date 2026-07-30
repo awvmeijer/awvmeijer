@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.png">
-    <img alt="Anthony Meijer, AI and Systems Engineer" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-dark.png" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-animated-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-animated-light.svg">
+    <img alt="Anthony Meijer, AI and Systems Engineer" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-animated-dark.svg" width="100%">
   </picture>
 </p>
 
@@ -95,6 +95,28 @@ flowchart LR
   style SCORE stroke:#7fd6a8,stroke-width:1.5px
   style ACT stroke:#7fd6a8,stroke-width:1.5px
   style LEDGER stroke:#7fd6a8,stroke-width:1.5px
+```
+
+### How Brains works
+
+Every interaction — chat, voice, commits, mail — is embedded into an episodic memory and distilled by a model into a live knowledge graph. A scheduled agent fleet acts on that memory, and nothing outward happens without passing a human-in-the-loop gate.
+
+```mermaid
+%%{init:{'theme':'base','themeVariables':{'background':'transparent','primaryColor':'transparent','secondaryColor':'transparent','tertiaryColor':'transparent','primaryBorderColor':'#8a8a85','secondaryBorderColor':'#7fd6a8','tertiaryBorderColor':'#8a8a85','primaryTextColor':'#8a8a85','secondaryTextColor':'#7fd6a8','tertiaryTextColor':'#8a8a85','lineColor':'#8a8a85','fontSize':'13px'}}}%%
+flowchart LR
+  IN["Interactions<br/>chat · voice · commits · mail"] --> EMB["Embeddings<br/>vector store"]
+  EMB --> MEM[("Episodic memory<br/>200K+ episodes")]
+  MEM --> KG["Knowledge graph<br/>LLM-distilled entities + relations"]
+  MEM --> RET["Retrieval<br/>semantic search"]
+  KG --> FLEET
+  RET --> FLEET
+  FLEET["Scheduled agent fleet<br/>briefing · triage · reflection"] --> GATE{"Human-in-the-loop<br/>approval gate"}
+  GATE --> ACT2["Actions<br/>briefings · summaries · replies"]
+  ACT2 -.-> IN
+
+  style MEM stroke:#7fd6a8,stroke-width:1.5px
+  style FLEET stroke:#7fd6a8,stroke-width:1.5px
+  style GATE stroke:#7fd6a8,stroke-width:1.5px
 ```
 
 ### Toolbox
