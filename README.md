@@ -30,31 +30,31 @@ Currently building atmospheric-intelligence systems at NTU's Earth Observatory o
   <tr>
     <td width="50%" valign="top">
       <a href="https://anthonymeijerdev.vercel.app/case-study"><img src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/shot-detector.png" alt="3DREAMS@SG" width="100%"></a>
-      <br><b><code>01</code>&nbsp; 3DREAMS@SG</b> &mdash; real-time atmospheric-intelligence platform. Fuses four data sources across three LiDAR sites, scores transport episodes with a six-component model, alerts over Teams / Telegram.
+      <br><b><code>01</code>&nbsp; 3DREAMS@SG</b> · real-time atmospheric-intelligence platform. Fuses four data sources across three LiDAR sites, scores transport episodes with a six-component model, alerts over Teams / Telegram.
       <br><sub>Python &middot; PostgreSQL &middot; Next.js &middot; Three.js</sub>
     </td>
     <td width="50%" valign="top">
       <img src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/shot-brains.png" alt="Brains" width="100%">
-      <br><b><code>02</code>&nbsp; Brains</b> &mdash; self-hosted LLM agent platform: episodic memory, a live knowledge graph, and a scheduled agent fleet behind approval gates.
+      <br><b><code>02</code>&nbsp; Brains</b> · self-hosted LLM agent platform: episodic memory, a live knowledge graph, and a scheduled agent fleet behind approval gates.
       <br><sub>FastAPI &middot; RAG &middot; vector search &middot; d3</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <img src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/shot-forge.png" alt="Forge" width="100%">
-      <br><b><code>03</code>&nbsp; Forge</b> <sub>(in development)</sub> &mdash; market-intelligence system built on Brain memory, with glass-box provenance on every claim.
+      <br><b><code>03</code>&nbsp; Forge</b> <sub>(in development)</sub> · market-intelligence system built on Brain memory, with glass-box provenance on every claim.
       <br><sub>FastAPI &middot; DuckDB &middot; LLM</sub>
     </td>
     <td width="50%" valign="top">
       <img src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/shot-traffic.png" alt="Traffic emissions" width="100%">
-      <br><b><code>04</code>&nbsp; Traffic emissions</b> &mdash; camera-based vehicle detection into a MOVES emissions model, validated against LTA reference sensors.
+      <br><b><code>04</code>&nbsp; Traffic emissions</b> · camera-based vehicle detection into a MOVES emissions model, validated against LTA reference sensors.
       <br><sub>Python &middot; computer vision &middot; MOVES</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <img src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/shot-aqi.png" alt="Air-quality forecasting" width="100%">
-      <br><b><code>05</code>&nbsp; Air-quality forecasting</b> &mdash; PyTorch deep net forecasting carbon-monoxide from satellite remote-sensing data.
+      <br><b><code>05</code>&nbsp; Air-quality forecasting</b> · PyTorch deep net forecasting carbon-monoxide from satellite remote-sensing data.
       <br><sub>PyTorch &middot; remote sensing</sub>
     </td>
     <td width="50%" valign="top" align="center">
@@ -99,7 +99,7 @@ flowchart LR
 
 ### How Brains works
 
-Every interaction — chat, voice, commits, mail — is embedded into an episodic memory and distilled by a model into a live knowledge graph. A scheduled agent fleet acts on that memory, and nothing outward happens without passing a human-in-the-loop gate.
+Every interaction (chat, voice, commits, mail) is embedded into an episodic memory and distilled by a model into a live knowledge graph. A scheduled agent fleet acts on that memory, and nothing outward happens without passing a human-in-the-loop gate.
 
 ```mermaid
 %%{init:{'theme':'base','themeVariables':{'background':'transparent','primaryColor':'transparent','secondaryColor':'transparent','tertiaryColor':'transparent','primaryBorderColor':'#8a8a85','secondaryBorderColor':'#7fd6a8','tertiaryBorderColor':'#8a8a85','primaryTextColor':'#8a8a85','secondaryTextColor':'#7fd6a8','tertiaryTextColor':'#8a8a85','lineColor':'#8a8a85','fontSize':'13px'}}}%%
