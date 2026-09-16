@@ -85,10 +85,10 @@ flowchart LR
 
 ### Toolbox
 
-**AI and ML** — Python · PyTorch · scikit-learn · LLM agents · RAG · MCP · knowledge graphs
-**Backend and data** — FastAPI · PostgreSQL · DuckDB · SQLite · PGLite · real-time pipelines
-**Web and visualisation** — Next.js · TypeScript · React · Three.js · Deck.GL · Mapbox
-**Cloud and automation** — Vercel · Azure · Render · GitHub Actions · serverless and cron
+**AI and ML** — Python · PyTorch · scikit-learn · LLM agents · RAG · MCP · knowledge graphs<br>
+**Backend and data** — FastAPI · PostgreSQL · DuckDB · SQLite · PGLite · real-time pipelines<br>
+**Web and visualisation** — Next.js · TypeScript · React · Three.js · Deck.GL · Mapbox<br>
+**Cloud and automation** — Vercel · Azure · Render · GitHub Actions · serverless and cron<br>
 **Scientific** — NumPy · SciPy · Xarray · signal processing · remote sensing · GIS
 
 <p align="center"><i>Open to AI and systems engineering roles. The fullest picture is my <a href="https://anthonymeijer.dev">portfolio</a>.</i></p>
