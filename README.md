@@ -1,35 +1,66 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.svg">
-    <img alt="Anthony Meijer, AI and Systems Engineer" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-dark.cec1fdbe.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.90e5068a.svg">
+    <img alt="Anthony Meijer — AI and Systems Engineer. AI that reads the real world." src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.90e5068a.svg" width="100%">
   </picture>
 </p>
 
 <p align="center">
-  <a href="https://anthonymeijerdev.vercel.app"><code>PORTFOLIO</code></a>
-  <a href="https://www.linkedin.com/in/anthonymeijer"><code>LINKEDIN</code></a>
-  <a href="mailto:awvmeijer@gmail.com"><code>EMAIL</code></a>
+  <a href="https://anthonymeijer.dev"><b>Portfolio</b></a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/anthonymeijer">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:awvmeijer@gmail.com">Email</a> &nbsp;·&nbsp;
+  <a href="https://orcid.org/0000-0002-6876-6702">ORCID</a>
 </p>
 
 ---
 
-I ship production AI end to end: LLM agents with persistent memory and retrieval, real-time sensor-fusion pipelines, and the detection models that decide when to act. I move comfortably from deriving a method to operating the system that runs it in production, and from model internals to a clear explanation for whoever has to trust the output.
+I build and operate production AI end to end: LLM agents with persistent memory and retrieval, real-time sensor-fusion pipelines, and the detection models that decide when to act. I move from deriving a method to running the system in production, and from model internals to a clear explanation for whoever has to trust the output.
 
-Currently building atmospheric-intelligence systems at NTU's Earth Observatory of Singapore.
+For nineteen months I designed, built and operated **3DREAMS@SG** at NTU's Centre for Climate Change and Environmental Health — a real-time haze monitoring platform, with no playbook to inherit. I handed it over in full in August 2026; the centre runs it today, which is the part I am proudest of.
+
+**Available now**, based in Singapore and Southeast Asia — interviewing for AI and systems roles, and taking select fixed-scope builds.
 
 ### What I work on
 
-- **LLM agents &amp; RAG**: persistent memory, vector retrieval, knowledge graphs, agent orchestration, human-in-the-loop approval
-- **Real-time ML systems**: sensor fusion, detection models, event-sourced pipelines, reproducible deployments
-- **Full-stack delivery**: FastAPI and Python backends, Next.js / TypeScript frontends, PostgreSQL, containers and CI
+- **LLM agents and RAG** — persistent memory, vector retrieval, knowledge graphs, agent orchestration, human-in-the-loop approval gates
+- **Real-time ML systems** — sensor fusion, detection models with calibrated probabilities, event-sourced pipelines, reproducible training
+- **Full-stack delivery** — FastAPI and Python backends, Next.js and TypeScript front ends, PostgreSQL and DuckDB, CI and containers
+
+### Selected work
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/awvmeijer/3dreams-sg"><img alt="3DREAMS@SG — real-time atmospheric intelligence" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-3dreams.9d0b5041.svg" width="100%"></a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://anthonymeijer.dev/projects/brains.html"><img alt="Brains — a memory system for AI agents" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-brains.6b34ea07.svg" width="100%"></a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://anthonymeijer.dev/projects/straat.html"><img alt="Straat — a research desk where every claim carries its provenance" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-straat.2e87891b.svg" width="100%"></a>
+    </td>
+    <td width="50%"></td>
+  </tr>
+</table>
+
+| | | |
+| --- | --- | --- |
+| [**ddp-train-harness**](https://github.com/awvmeijer/ddp-train-harness) | Distributed PyTorch training that reproduces anywhere — CI, torchrun, Docker, multi-node Slurm. | PyTorch DDP · Slurm |
+| [**tomorrow-alert-poc**](https://github.com/awvmeijer/tomorrow-alert-poc) | Threshold weather alerts on the Tomorrow.io API: sense, score, act, replay. | FastAPI · Telegram |
+| [**Traffic Emissions**](https://anthonymeijer.dev/projects/traffic-emissions.html) | Street-level emissions estimated from traffic cameras that were already there. | Computer vision · MOVES-proxy |
+| [**AQ Forecasting**](https://anthonymeijer.dev/projects/aq-forecasting.html) | Six years of Sentinel-5P carbon monoxide, a PyTorch GRU, and an honest account of what it got wrong. | PyTorch · Remote sensing |
+
+> Several of these run as private production systems. Public extracts and full write-ups live in the pinned repositories and on [anthonymeijer.dev](https://anthonymeijer.dev).
 
 ### How 3DREAMS@SG works
 
-Four data sources onto one clock, across three sites, on a ten-minute cycle. Every two-hour window runs two detection stages through a single scorer shared by the live pipeline, the replay engine, and the dashboard.
+Four data sources onto one clock, across three sites, on a ten-minute cycle. Every two-hour window runs two detection stages through a single scorer shared by the live pipeline, the replay engine and the dashboard.
 
 ```mermaid
-%%{init:{'theme':'base','themeVariables':{'background':'transparent','primaryColor':'transparent','secondaryColor':'transparent','tertiaryColor':'transparent','primaryBorderColor':'#8a8a85','secondaryBorderColor':'#8a8a85','primaryTextColor':'#8a8a85','secondaryTextColor':'#8a8a85','tertiaryTextColor':'#8a8a85','lineColor':'#8a8a85','fontSize':'13px'}}}%%
+%%{init:{'theme':'base','themeVariables':{'background':'transparent','primaryColor':'transparent','secondaryColor':'transparent','tertiaryColor':'transparent','primaryBorderColor':'#5e5e5e','secondaryBorderColor':'#5e5e5e','tertiaryBorderColor':'#5e5e5e','primaryTextColor':'#8f8f8f','secondaryTextColor':'#8f8f8f','tertiaryTextColor':'#8f8f8f','lineColor':'#5e5e5e','fontSize':'13px'}}}%%
 flowchart LR
   L["Doppler LiDAR<br/>backscatter + wind"] --> FUSE
   AQ["NEA air quality"] --> FUSE
@@ -47,20 +78,19 @@ flowchart LR
   ACT["Teams + Telegram agents · 17 commands<br/>10-panel mission control · 5-viewport geospatial hub"]
 
   LEDGER -.-> SCORE
+
+  classDef act stroke:#0099ff,color:#8f8f8f;
+  class ACT act;
 ```
-
-### Selected work
-
-| | Project | What it is | Stack |
-| --- | --- | --- | --- |
-| `01` | **3DREAMS@SG** | Real-time atmospheric-intelligence platform: fuses four data sources across three LiDAR sites, scores transport events, alerts over Teams / Telegram. [Live demo &rarr;](https://3dreams-demo.vercel.app/demo/v5/index.html) | Python &middot; PostgreSQL &middot; Next.js &middot; Three.js |
-| `02` | **Brains** | Self-hosted LLM agent platform with episodic memory, a live knowledge graph, and a scheduled agent fleet behind approval gates. | FastAPI &middot; RAG &middot; vector search &middot; d3 |
-| `03` | **Forge** | Market-intelligence research system built on Brain memory, with glass-box provenance on every claim. | FastAPI &middot; DuckDB &middot; LLM |
-
-> Several of these run as private production systems. Public, showcase-only versions and write-ups live in the pinned repositories and on my <a href="https://anthonymeijerdev.vercel.app">portfolio</a>.
 
 ### Toolbox
 
-`Python` &middot; `PyTorch` &middot; `LLM agents / RAG` &middot; `FastAPI` &middot; `PostgreSQL` &middot; `DuckDB` &middot; `TypeScript` &middot; `Next.js` &middot; `Three.js` &middot; `Docker` &middot; `Vercel / Render / Azure`
+**AI and ML** — Python · PyTorch · scikit-learn · LLM agents · RAG · MCP · knowledge graphs
+**Backend and data** — FastAPI · PostgreSQL · DuckDB · SQLite · PGLite · real-time pipelines
+**Web and visualisation** — Next.js · TypeScript · React · Three.js · Deck.GL · Mapbox
+**Cloud and automation** — Vercel · Azure · Render · GitHub Actions · serverless and cron
+**Scientific** — NumPy · SciPy · Xarray · signal processing · remote sensing · GIS
 
-<p align="center"><i>Open to AI engineering roles. The best overview is my <a href="https://anthonymeijerdev.vercel.app">portfolio</a>.</i></p>
+<p align="center"><i>Open to AI and systems engineering roles. The fullest picture is my <a href="https://anthonymeijer.dev">portfolio</a>.</i></p>
+
+<!-- Generated by design-system/build/github/readme.mjs in the Portfolio repo. Edit the spec, not this file. -->
