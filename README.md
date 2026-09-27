@@ -1,9 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-dark.2a213aca.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.9f0d9f94.svg">
-    <img alt="Anthony Meijer · AI and Systems Engineer. AI that reads the real world." src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner-light.9f0d9f94.svg" width="100%">
-  </picture>
+  <img alt="Anthony Meijer · AI and Systems Engineer. I build AI systems for the physical world." src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner.4673f4d4.svg" width="100%">
 </p>
 
 <p align="center">
