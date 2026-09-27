@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Anthony Meijer · AI and Systems Engineer. I build AI systems for the physical world." src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner.188b6bd2.svg" width="100%">
+  <img alt="Anthony Meijer · AI and Systems Engineer. I build AI systems for the physical world." src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/banner.425b5895.svg" width="100%">
 </p>
 
 <p align="center">
