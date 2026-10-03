@@ -26,7 +26,7 @@ For nineteen months I designed, built and operated **3DREAMS@SG** at NTU's Centr
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/awvmeijer/3dreams-sg"><img alt="3DREAMS@SG · real-time atmospheric intelligence" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-3dreams.d13b4b34.svg" width="100%"></a>
+      <a href="https://github.com/awvmeijer/3dreams-sg"><img alt="3DREAMS@SG · real-time atmospheric intelligence" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-3dreams.d8f457d1.svg" width="100%"></a>
     </td>
     <td width="50%" valign="top">
       <a href="https://anthonymeijer.dev/projects/brains.html"><img alt="Brains · a memory system for AI agents" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-brains.c8a51a58.svg" width="100%"></a>
@@ -34,7 +34,7 @@ For nineteen months I designed, built and operated **3DREAMS@SG** at NTU's Centr
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://anthonymeijer.dev/projects/straat.html"><img alt="Straat · a research desk where every claim carries its provenance" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-straat.7e1bf936.svg" width="100%"></a>
+      <a href="https://anthonymeijer.dev/projects/straat.html"><img alt="Straat · the market-intelligence desk for the physical AI buildout" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-straat.65f43e27.svg" width="100%"></a>
     </td>
     <td width="50%" valign="top">
       <a href="https://anthonymeijer.dev/projects/traffic-emissions.html"><img alt="Traffic Emissions · street-level emissions from existing traffic cameras" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-traffic.80d097b3.svg" width="100%"></a>
