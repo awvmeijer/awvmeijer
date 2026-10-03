@@ -34,7 +34,7 @@ For nineteen months I designed, built and operated **3DREAMS@SG** at NTU's Centr
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://anthonymeijer.dev/projects/straat.html"><img alt="Straat · the market-intelligence desk for the physical AI buildout" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-straat.65f43e27.svg" width="100%"></a>
+      <a href="https://anthonymeijer.dev/projects/straat.html"><img alt="Straat · the market-intelligence desk for the physical AI buildout" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-straat.d0508f20.svg" width="100%"></a>
     </td>
     <td width="50%" valign="top">
       <a href="https://anthonymeijer.dev/projects/traffic-emissions.html"><img alt="Traffic Emissions · street-level emissions from existing traffic cameras" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-traffic.80d097b3.svg" width="100%"></a>
