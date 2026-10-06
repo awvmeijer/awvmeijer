@@ -26,7 +26,7 @@ For nineteen months I designed, built and operated **3DREAMS@SG** at NTU's Centr
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/awvmeijer/3dreams-sg"><img alt="3DREAMS@SG · real-time atmospheric intelligence" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-3dreams.d8f457d1.svg" width="100%"></a>
+      <a href="https://github.com/awvmeijer/3dreams-sg"><img alt="3DREAMS@SG · real-time atmospheric intelligence" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-3dreams.8bdab035.svg" width="100%"></a>
     </td>
     <td width="50%" valign="top">
       <a href="https://anthonymeijer.dev/projects/brains.html"><img alt="Brains · a memory system for AI agents" src="https://raw.githubusercontent.com/awvmeijer/awvmeijer/main/assets/card-brains.c8a51a58.svg" width="100%"></a>
